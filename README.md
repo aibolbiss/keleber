@@ -1,3 +1,3 @@
 # KELEBER
 
-Author of Project - Bissenkul Aibol
+Author of project Aibol Bissenkul
