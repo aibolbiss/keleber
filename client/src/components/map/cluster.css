@@ -1,0 +1,55 @@
+.cluster-marker {
+  color: #fff;
+  background: #1978c8;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapboxgl-popup-close-button {
+  font-size: 2rem;
+  color: white;
+  opacity: 0.54;
+  z-index: 2;
+  transition: opacity 0.3s linear;
+}
+.mapboxgl-popup-close-button:hover {
+  opacity: 0.8;
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+}
+
+.mapboxgl-popup-tip {
+  border-bottom-color: rgba(0, 0, 0, 0.5) !important;
+  border-top-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.swiper {
+  z-index: unset !important;
+}
+.swiper-pagination {
+  text-align: right !important;
+  left: unset !important;
+  right: 8px;
+}
+
+/* New Styles */
+.mapboxgl-popup-content{
+	width: 300px;
+}
+.css-16srtq9{
+	height: 180px !important;
+}
+.css-12tzin9 {
+	padding: 0 8px 0 24px !important;
+}
+
+.css-1eoe787-MuiSlider-markLabel, .css-yafthl-MuiSlider-markLabel{
+	display: none;
+}
+.css-76a484-MuiContainer-root{
+	padding-top: 10px !important;
+}
