@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
 
+mongoose.set('strictQuery', false);
+
 const roomSchema = mongoose.Schema(
   {
     lng: { type: Number, required: true },

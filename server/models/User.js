@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
 
+mongoose.set('strictQuery', false);
+
 const userSchema = mongoose.Schema(
   {
     name: { type: String, min: 2, max: 50, required: true },
