@@ -9,6 +9,7 @@ import { useValue } from '../../context/ContextProvider';
 
 const PopupRoom = ({ popupInfo }) => {
   const { title, description, price, images } = popupInfo;
+
   const { dispatch } = useValue();
   return (
     <Card sx={{ maxWidth: 400 }}>
@@ -19,7 +20,11 @@ const PopupRoom = ({ popupInfo }) => {
               'linear-gradient(to bottom, rgba(0,0,0,0.7)0%, rgba(0,0,0,0.3)70%, rgba(0,0,0,0)100%)',
             zIndex: 2,
           }}
-          title={price === 0 ? 'Договорная цена' : price + ' ₸'}
+          title={
+            price === 0
+              ? 'Договорная цена'
+              : new Intl.NumberFormat('ru-RU').format(price) + ' ₸'
+          }
           position='top'
         />
         <ImageListItemBar

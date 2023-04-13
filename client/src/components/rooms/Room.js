@@ -139,7 +139,9 @@ const Room = () => {
                 {'Цена: '}
               </Typography>
               <Typography component='span'>
-                {room?.price === 0 ? 'Договорная цена' : room?.price + ' ₸'}
+                {room?.price === 0
+                  ? 'Договорная цена'
+                  : new Intl.NumberFormat('ru-RU').format(room?.price) + ' ₸'}
               </Typography>
             </Box>
             <Box
